@@ -51,7 +51,9 @@ function handleClickEvent(e) {
     let result = calculateWeight(userWeight, planetName);
 
     // 6. Write code to display the message shown in the screenshot. 
-console.log("hello");
+// console.log("hi");
+let message = document.getElementById("output");
+message.innerText = "If you were on " + planetName + ", you would weigh " + result + "lbs!";
 } 
 document.getElementById("calculate-button").addEventListener("click", () => handleClickEvent())
     // 7. Set the #calculate-button element's onclick method to use the handleClickEvent function.
