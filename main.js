@@ -24,11 +24,12 @@ var planets = [
     // `.forEach` `document.createElement` `document.getElementById` `.appendChild` 
     
 const select = document.getElementById("planets");
-
+planets.reverse();
 planets.forEach((element) => {
     var option = document.createElement("option");
     option.innerHTML = element[0];
     select.appendChild(option);
+    
 })
 
 function calculateWeight(weight, planetName) {
@@ -51,9 +52,8 @@ function handleClickEvent(e) {
     let result = calculateWeight(userWeight, planetName);
 
     // 6. Write code to display the message shown in the screenshot. 
-// console.log("hi");
 let message = document.getElementById("output");
-message.innerText = "If you were on " + planetName + ", you would weigh " + result + "lbs!";
+message.innerText = "If you were on " + planetName + ", you would weigh " + result + " pounds!";
 } 
 document.getElementById("calculate-button").addEventListener("click", () => handleClickEvent())
     // 7. Set the #calculate-button element's onclick method to use the handleClickEvent function.

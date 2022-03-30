@@ -5,14 +5,16 @@
     <title>Astro Weight Calculator</title>
   </head>
   <body>
-     <!-- Write your markup here  -->
-     <input id="user-weight" type="text" placeholder="Weight (lbs)" />
-     <select id="planets">
-       <option>Select Planet</option>
+    <div>
+     <h1>Astro Weight Calculator</h1>
+     <input id="user-weight" class="selections" type="text" placeholder="Weight (lbs)" />
+     <select id="planets" class="selections">
+       <option id="option">Select Planet</option>
      </select>
-     <p id="output"></p>
-     <button id="calculate-button">Calculate</button>
-
+     <p id="output" class="selections"></p>
+     <button id="calculate-button" class="selections">Calculate</button>
+    </div>
     <script src="main.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
   </body>
 </html>
